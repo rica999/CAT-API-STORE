@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    background-image: url(https://e0.pxfuel.com/wallpapers/69/418/desktop-wallpaper-pin-de-trischell-magbuhat-en-cat-phone-fondos-de-gato-empapelado-de-gato-fondo-de-pantalla-de-dibujos-animados-cat-cartoon.jpg);
+    background-repeat: repeat;
+    font-family: 'Catamaran', sans-serif;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-main{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    margin: 16px 0;
+}
+.container-main h1{
+    font-size: 3rem;
+    text-align: center;
+    color: #3f3d3d;
+    margin: 4px;
+}
+.container-main h2{
+    font-size: 2rem;
+    text-align: center;
+    margin: 8px 0;
+    color: #5f4025;
+}
+.container-main label{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.container-main input{
+    font-size: 1rem;
+    margin: 8px;
+    border-radius: 20px;
+    text-align: center;
+}
+#numGatos{
+    border: 2px solid #c4bca6;
+    padding: 4px;
+}
+#numGatos:focus{
+    outline: none;
+    border: 2px solid #5f4025;
+}
+.cat-random{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.cat-random__item{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.cat-random__item img{
+    width:200px;
+    height: 200px;
+    border: 2px solid #3f3d3d;
+}
+.cat-random__item button{
+    width: max-content;
+    margin-top: 12px;
+    background-color: #ac6c6c;
+    color: #fcdc96;
+    border-radius: 50px;
+    font-family: 'Catamaran', sans-serif;
+    border: none;
+    margin: 16px 0;
+    font-weight: bold;
+}
+.cat-random__item button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.cat-favorites__list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 16px;
+    justify-content: center;
+}
+.cat-favorite__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cat-favorite__item button{
+    width: max-content;
+    margin-top: 12px;
+    background-color: #ac6c6c;
+    color: #fcdc96;
+    border-radius: 50px;
+    font-family: 'Catamaran', sans-serif;
+    border: none;
+    font-weight: bold;
+}
+.cat-favorite__item button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.cat-favorite__item img{
+    width:200px;
+    height: 200px;
+    border: 2px solid #3f3d3d;
+}
+.container-main>button{
+    margin: 8px 0;
+    border: none;
+    background-color: #3f3d3d;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    color: #fcdc96;
+}
+.container-main>button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+span{
+    font-size: 1rem;
+    margin: 8px 0;
+}
+.hidden{
+    display: none;
+}
+.image-preview{
+    width:200px;
+    height: 200px;
+    margin: 4px 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form input{
+    cursor: pointer;
+    padding: 0 8px;
+    border: none;
+    background-color: #3f3d3d;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    color: #fcdc96;
+}
+@media screen and (max-width:600px) {
+    .container-main{
+        width: 80%;
+    }
+}
